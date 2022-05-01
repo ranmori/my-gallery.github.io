@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My gallery</title>
+    <style>
+
+        .image-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            max-width: 100%;
+           
+           
+        }
+        .imga{
+            max-width: 100vw;
+            border-radius: 17px;
+            margin: 50px 100px;
+            justify-content:center;
+            align-items:center;
+        }
+        .imga > img{
+            max-width:300px;
+            /* padding-left: 100px;
+            padding-right: 100px; */
+            display: flex;
+            text-align:center;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 20px;
+            align-items: center;
+            /* max-width: 100%; */
+        }
+        .img-container{
+            max-width: 100vw;
+            display: grid;
+           /* justify-content: space-between;
+           place-items: center; */
+           text-align: center;
+           align-content: center;
+           justify-content: center;
+           margin:0  auto;
+           gap: 36px;
+        }
+        .img-container > .img1{
+           max-width: 299px;
+           height: 299px;
+           border-radius: 10px;
+           grid-column: 1/ 3;
+           grid-row: 1;
+        }
+        .img-container > .img2{
+            max-width: 629px;
+            height: 299px;
+            border-radius: 10px;
+            grid-column: 2/ span 3;
+            grid-row: 1;
+        }
+        .img-container > .img3{
+            grid-row: 2;
+            border-radius: 10px;
+            grid-column: 1/span 2;
+            max-width: 634px;
+            height: 299px;
+        }
+        .img-container > .img4{
+            max-width: 299px;
+            height: 299px;
+            border-radius: 10px;
+            grid-column: 1;
+            grid-row: 3;
+        }
+        .img-container > .img5{
+            max-width: 299px;
+            border-radius: 10px;
+            height: 299px;
+            grid-column: 2;
+            grid-row: 3;
+        }
+        .img-container > .img6{
+            max-width: 297px;
+            height: 634px;
+            grid-column: 3;
+            border-radius: 10px;
+            grid-row: 2/span 3 ;
+        }
+        
+        .mini{
+            display: grid;
+            place-items:center;
+            grid-template-columns: repeat(3, auto);
+            justify-content:center;
+            text-align: center;
+            /* margin:0 60px; */
+
+            
+        }
+        .main h1{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+
+            color: #050505;
+        }
+        .main p{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            /* identical to box height */
+
+
+            color: #A9A9A9;
+
+        }
+        .containers .price{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+
+            color: #4E5150;
+        }
+        .containers p{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+
+            /* Gray 4 */
+
+            color: #BDBDBD;
+        }
+        .containers{
+            background:#E5E5E5;
+            padding: 20px 70px;
+            margin: 20px;
+            border-radius: 12px;
+            margin-bottom: 100px;
+        }
+
+        @media (max-width:900px){
+            .main h1{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 17px;
+                line-height: 17px;
+                text-align: center;
+
+                color: #1d1f1e;
+        }
+        .main .price{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 15px;
+            text-align: center;
+
+            color: #000000;
+        }
+        .containers p{
+                        font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: center;
+
+            /* Gray 4 */
+
+            color: #d6d6d6;
+        }
+        .main p{
+            font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+
+                color: #4E5150;
+        }
+          .mini{
+              display: flex;
+              justify-content:center;
+            text-align: center;
+            flex-wrap: wrap;
+            /* width: 200px; */
+          }
+          .containers{
+            padding: 10px 38px;
+            margin: 10px;
+            margin-bottom: 30px;
+          
+          }
+          .img-container{
+              margin-left:40px ;
+          }
+            .img-container > .img1{
+                width:109px;
+                height: 109px;
+           }
+                .img-container > .img2{
+                width: 229px;
+                height: 109px;          
+            }
+                .img-container > .img3{
+                width:229px;
+                    height: 109px;            }
+                .img-container > .img4{
+                    width:109px;
+                height: 109px;}
+                .img-container > .img5{
+                    width:109px;
+                height: 109px;}
+                .img-container > .img6{
+                    width: 109px;
+    height: 260px;}
+               
+        }
+        
+footer {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #A9A9A9;
+}
+    
+
+       
+    </style>
+</head>
+<body>
+    <section class="main">
+        <div class="image-container">
+            <div class="imga">
+                <img src="./profilePhoto.png" alt="">
+            </div>
+            
+            <h1>Rodney Cotton</h1>
+            <p>Helsinki, Finland</p>
+        </div>
+        <div class="mini">
+            <div class="containers">
+                <p class="price">100</p>
+                <p>posts</p>
+            </div>
+            <div class="containers">
+                <p class="price">2,242</p>
+                <p>followers</p>
+            </div>
+            <div class="containers">
+                <p class="price">1,432</p>
+                <p>following</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="images-grid">
+            <div class="img-container">
+        
+                <img  class="img1" src="./photo1.png" alt="">
+            
+                <img class="img2" src="./photo2.png" alt="">
+                <img class="img3" src="./photo3.png" alt="">
+         
+                <img class="img4" src="./photo6.png" alt="">
+                 <!-- <div class="flexie"> -->
+                <img class="img5" src="./photo5.png" alt="">
+      
+                <img class="img6" src="./photo_4.png" alt="">
+            <!-- </div> -->
+        
+
+     
+    </section>
+    <footer>
+        <div>
+            <small>
+                created by username - devChallenges.io
+            </small>
+        </div>
+    </footer>
+</body>
+</html>
