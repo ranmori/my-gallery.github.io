@@ -40,18 +40,18 @@
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+- Where can I see your demo? https://ranmori.github.io/my-gallery.github.io/
+- What was your experience? amazing one
+- What have you learned/improved? it was a fun way of practicing grid
+- Your wisdom? :) keep practicing guys 
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [Html]
+- [Css]
+- [javascript]
 
 ## Features
 
@@ -70,6 +70,6 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Website [your-website.com](https://{ranmori.github.io/my-gallery.github.io/})
+- GitHub [@your-username](https://{github.com/ranmori})
+
